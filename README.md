@@ -13,3 +13,6 @@ There's several ways to use this tool
 3. Run the .exe in the terminal with the log file path as an argument.
 
 ![output](https://i.gyazo.com/1226da18c93cf5aaa44b01200feecb21.png)
+
+
+If you like MegaLogViewer Lite, buy the HD version, it has lots of great features you'll appreciate! 
