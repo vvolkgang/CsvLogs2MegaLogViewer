@@ -1,6 +1,6 @@
-# Csv Logs 2 Mega Log Viewer
+# Process Csv Logs for Mega Log Viewer
 
-Tool used to process CSV logs created by standalone car ECU's, so they can be opened by Mega Log Viewer. The CSV separator should be 
+Tool used to process CSV logs created by standalone car ECU's, so they can be opened by Mega Log Viewer. I've been using this for my ME221 logs.
 
 Currently, [this](https://github.com/vvolkgang/CsvLogs2MegaLogViewer/blob/master/MslLogsFixer/Program.cs#L12) are the supported columns / values delimiters, which are auto-detected by the tool.
 
