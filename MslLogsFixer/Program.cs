@@ -29,16 +29,13 @@ namespace MslLogsFixer
 
             var fileContent = File.ReadAllText(path);
             var oldSeparator = AutoDetectSeparator(fileContent);
-            if (oldSeparator == '\t')
+            if (oldSeparator != '\t')
             {
-                WriteLine("File's already tab based, won't process again.");
-                return;
+                fileContent = fileContent.Replace(oldSeparator, newSeparator);
             }
 
-            fileContent = fileContent.Replace(oldSeparator, newSeparator);
             path = Path.ChangeExtension(path, "msl");
             File.WriteAllText(path, fileContent);
-
 
             OpenLog(path);
         }
@@ -49,7 +46,7 @@ namespace MslLogsFixer
             ProcessStartInfo startInfo = new ProcessStartInfo
             {
                 FileName = mlvPath,
-                Arguments = "\""+logPath+"\""
+                Arguments = "\"" + logPath + "\""
             };
 
             WriteLine();
