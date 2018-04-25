@@ -3,6 +3,9 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp1.1</TargetFramework>
+    <Authors>Alison Fernandes</Authors>
+    <Company>Tshorissu Motoring</Company>
+    <Description>Tool used to process CSV logs created by standalone car ECU's, so they can be opened by Mega Log Viewer. I've been using this for my ME221 logs.</Description>
   </PropertyGroup>
 
 </Project>
